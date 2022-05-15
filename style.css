@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+ul, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #f0f0f0;
+  height: 100vh;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 4rem;
+  padding: 2rem 0;
+}
+
+header nav img {
+  display: none;
+}
+
+header nav .links {
+  display: block;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 2rem;
+}
+
+header nav ul li a {
+  color: #000;
+  padding-bottom: 3px;
+}
+
+header nav ul li a:hover {
+  border-bottom: 1px solid #000;
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+section form {
+  background-color: #fff;
+  width: 700px;
+  padding: 2rem;
+  margin: 4rem 4rem 2rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+section form label {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+section form div {
+  position: relative;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+section form div input {
+  padding: .4rem 10px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+section form div img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  cursor: pointer;
+}
+
+section form .gender {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section form .gender p {
+  margin-right: 2rem;
+  font-weight: bold;
+}
+
+section form .gender label {
+  display: inline;
+}
+
+section form .gender div {
+  display: block;
+}
+
+section .btn {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 25px;
+  margin-top: 2rem;
+}
+
+section .btn:hover {
+  background-color: #303030;
+}
+
+.blur::after {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+@media (max-width: 500px) {
+  body {
+    height: 100vh;
+  }
+  header nav img {
+    display: block;
+    width: 2rem;
+    cursor: pointer;
+  }
+  header nav .links {
+    background-color: #000;
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 100;
+    display: none;
+  }
+  header nav .links #close {
+    display: block;
+    z-index: 200;
+    background-color: #000;
+    position: absolute;
+    right: 4rem;
+    top: 1rem;
+  }
+  header nav .links ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #000;
+    margin-top: 10rem;
+  }
+  header nav .links ul li {
+    background-color: #000;
+    margin-bottom: 2rem;
+  }
+  header nav .links ul li a {
+    background-color: #000;
+    color: #fff;
+  }
+  section form {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
